@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs HTML</title>
+</head>
+<body>
+    <div>
+        <a href="/">Início</a>|
+        <a href="/aboutme/">Sobre mim.</a>|
+        <a href="/exercicios/">Exercícios do Curso</a>|
+        <a href="/estruturacao/">Estruturação de  HTML</a>
+    </div>
+
+    <hr>
+
+    <h1>Inputs HTML</h1>
+
+    <form>
+        <!-- Campo de texto -->
+        <label for="nome">Account: </label>
+        <input type="text" name="a" id="nome" required placeholder="Account name"><br><br>
+
+        <!-- Campo de e-mail -->
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="e" required placeholder="youremail@email.com"><br><br>
+
+        <!-- Campo de senha -->
+        <label for="password1">Password:</label>
+        <input type="password" name="p1" id="password1" required  placeholder="your password"><br><br>
+        <label for="password2">Repeat your password:</label>
+        <input type="password" name="p2" id="password2" required placeholder="repeat password"><br><br>
+
+        <!-- Campo de seleção rádio -->
+        <label>Gender</label><br>
+        <input type="radio" name="g" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="g" id="female" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Campo de seleção múltipla -->
+        <label>Interest</label><br>
+        <input type="checkbox" name="i" id="front-end" value="front-end">
+        <label for="front-end">Front-end</label>
+        <input type="checkbox" name="i" id="back-end" value="back-end">
+        <label for="back-end">Back-end</label>
+        <input type="checkbox" name="i" id="Fullstack" value="Fullstack">
+        <label for="Fullstack">Fullstack</label><br><br>
+
+        <!-- Campo de data -->
+        <label for="dateOfBirth">Date of Birth:</label><br>
+        <input type="date" name="b" id="dateOfBirth"><br><br>
+
+        <!-- Campo de Arquivo -->
+        <label for="profilePic">Profile Picture:</label><br>
+        <input type="file" name="pfp" id="profilePic"><br><br>
+
+        <!-- Campo de caixa de seleção -->
+        <label for="situacao">Profession</label><br>
+        <select name="s" id="situacao">
+            <option value="" selected disabled>Choose one</option>
+            <option value="student">Studying</option>
+            <option value="parttimer">Part-time Develper</option>
+            <option value="junior">Junior Developer</option>
+            <option value="plain">Developer</option>
+            <option value="student">Senior Developer</option>
+        </select><br><br>
+
+        <!-- Campo de Text Area -->
+        <label for="about">About me</label><br>
+        <textarea name="am" id="about" cols="50" rows="3" placeholder="Tell us about yourself"></textarea><br><br>
+        
+        <button type="submit">Enviar</button><br><br>
+    </form>
+</body>
+</html>

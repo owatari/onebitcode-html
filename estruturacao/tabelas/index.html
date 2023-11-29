@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas no HTML</title>
+</head>
+<body>
+    <div>
+        <a href="/">Início</a>|
+        <a href="/aboutme/">Sobre mim.</a>|
+        <a href="/exercicios/">Exercícios do Curso</a>|
+        <a href="/estruturacao/">Estruturação de  HTML</a>
+    </div>
+
+    <hr>
+
+    <h1>Criação de tabelas no HTML</h1>
+
+    <table>
+        <tr>
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+        </tr>
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+        </tr>
+        <tr>
+            <td>Dado 3</td>
+            <td>Dado 4</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>Tabela com Cabeçalho</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Zayon</td>
+                <td>26</td>
+                <td>Desempregado</td>
+            </tr>
+            <tr>
+                <td>Rafael</td>
+                <td>23</td>
+                <td>Atendente</td>
+            </tr>
+            <tr>
+                <td>Pietro</td>
+                <td>23</td>
+                <td>Fã de K-Pop</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>Tabela com células personalizadas</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">Informações Pessoais</th>
+                <th>Contato</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nome: </td>
+                <td>João</td>
+                <td rowspan="2">Telefone: 123456789</td>
+            </tr>
+            <tr>
+                <td>Idade: </td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

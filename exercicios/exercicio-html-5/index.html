@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5 - Formulário de Inscrição</title>
+</head>
+<body>
+    <div>
+        <a href="/">Início</a>|
+        <a href="/aboutme/">Sobre mim.</a>|
+        <a href="/exercicios/">Exercícios do Curso</a>|
+        <a href="/estruturacao/">Estruturação de  HTML</a>
+    </div>
+
+    <hr>
+
+    <h1>Formulário de Inscrição</h1>
+
+    <form>
+        <div>
+            <label for="name">Nome: </label>
+            <input type="text" name="n" id="name" required placeholder="Eletrostavia da Silva Isnavok">
+        </div>
+        <br>
+
+        <div>
+            <label for="email">E-Mail:</label>
+            <input type="email" name="e" id="email" required placeholder="eletrostavia@email.com">
+        </div>
+        <br>
+
+        <div>
+            <label for="phone">WhatsApp:</label>
+            <input type="tel" name="p" id="phone" required placeholder="00123456789">
+        </div>
+        <br>
+
+        <div>
+            <label>Área de atuação:</label><br>
+            <input type="radio" name="a" id="dev" value="dev" required>
+            <label for="dev">Desenvolvimento</label>
+
+            <input type="radio" name="a" id="qa" value="qa" required>
+            <label for="qa">Quality Assurance (QA)</label>
+
+            <input type="radio" name="a" id="data" value="data" required>
+            <label for="data">Analista de Dados</label>
+
+            <input type="radio" name="a" id="if" value="if" required>
+            <label for="if">Infraestrutura</label>
+        </div>
+        <br>
+
+        <div>
+            <label for="obs">Observações</label><br>
+            <textarea name="o" id="obs" cols="25" rows="3" placeholder="..."></textarea>
+        </div>
+        <br>
+
+        <div>
+            <input type="checkbox" name="w" id="news" required>
+            <label for="news">Desejo receber novidades e ofertas por  e-mail.</label>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Inscrever-se</button>
+        </div>
+        
+    </form>
+</body>
+</html>
